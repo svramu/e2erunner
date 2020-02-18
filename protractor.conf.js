@@ -1,10 +1,9 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   SELENIUM_PROMISE_MANAGER: false,
-  allScriptsTimeout: 500000,
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 500000,
+    defaultTimeoutInterval: 3600000,
   },
   capabilities: {
     'directConnect': true,

@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "see readme.txt",
   "scripts": {
-    "test": "tsc && protractor"
+    "test": "tsc && protractor",
+    "build": "ncc build e2erunner.js -o dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "exceljs": "^1.15.0",
-    "protractor": "^5.4.1"
+    "exceljs": "^1.15.0"
   },
   "devDependencies": {
     "@types/jasmine": "^2.8.9",
