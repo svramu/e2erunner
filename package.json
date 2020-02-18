@@ -1,0 +1,20 @@
+{
+  "name": "test-protractor",
+  "version": "1.0.0",
+  "description": "see readme.txt",
+  "scripts": {
+    "test": "tsc && protractor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^1.15.0",
+    "protractor": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.9",
+    "@types/node": "^13.1.8",
+    "typescript": "~3.6"
+  }
+}

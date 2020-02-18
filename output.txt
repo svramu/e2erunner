@@ -1,0 +1,18 @@
+[15:13:11] I/launcher - Running 1 instances of WebDriver
+[15:13:11] I/hosted - Using the selenium server at http://localhost:4444/wd/hub
+Started
+2 ----------
+14 ----------
+15 ----------
+23 ----------
+33 ----------
+45 ----------
+[32m.[0m
+
+
+Ran 1 of 2 specs
+1 spec, 0 failures
+Finished in 76.978 seconds
+
+[15:15:53] I/launcher - 0 instance(s) of WebDriver still running
+[15:15:53] I/launcher - chrome #01 passed
