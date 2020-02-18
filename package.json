@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "see readme.txt",
   "scripts": {
+    "start": "tsc && protractor",
     "test": "tsc && protractor",
-    "build": "ncc build e2erunner.js -o dist"
+    "build": "tsc && ncc build e2erunner.js -o dist"
   },
   "keywords": [],
   "author": "",

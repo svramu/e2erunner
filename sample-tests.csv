@@ -1,0 +1,53 @@
+Desc,Steps,Locator,Action,Data
+Case 1,,,,
+Desc1,Step 1,https://www.seleniumeasy.com/test/,url,
+,,,title,Selenium Easy - Best Demo website to practice Selenium Webdriver Online
+,,All Examples,link:text,
+,,Input Forms,link:text,
+,,,sleep,1000
+,,Simple Form Demo,link:text,
+,,h3,assert,first example
+,,,sleep,1000
+,,//input[@id='user-message'],keys,ramkumar
+,,Show Message,click:text,
+,,span#display,assert,ramkumar
+,,,,
+Case 2,,,,
+,,All Examples,link:text,
+,,Input Forms,link:text,
+,,Checkbox Demo,link:text,
+,,,sleep,2000
+,,h3,assert,with checkboxes
+,,input#isAgeSelected,click,
+,,div#txtAge,assert,Success
+Case 3,,,,
+,,All Examples,link:text,
+,,Input Forms,link:text,
+,,Radio Buttons Demo,link:text,
+,,h3,assert,radio buttons
+,,,sleep,1500
+,,input[value='Female'][name='optradio'],click,
+,,button#buttoncheck,click,
+,,,sleep,1500
+,,p.radiobutton,assert,Female
+Case 4,,,,
+,,All Examples,link:text,
+,,Input Forms,link:text,
+,,Select Dropdown List,link:text,
+,,h3,assert,select dropd down list
+,,select#select-demo option[value='Friday'],click,
+,,p.selected-value,assert,Friday
+,,,sleep,1500
+,,select#multi-select option:nth-child(4),click,
+,,,sleep,1500
+,,button#printAll,click,
+,,p.getall-selected,assert,New York
+Case 5,,,,
+,,All Examples,link:text,
+,,Progress Bars,link:text,
+,,Bootstrap,link:text,
+,,,sleep,1500
+,,button#cricle-btn ,click,
+,,,sleep,25000
+,,div.percenttext,assert,100
+End,,,,
