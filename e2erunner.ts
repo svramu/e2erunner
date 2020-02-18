@@ -54,7 +54,7 @@ describe('eune2e dynamic', () => {
         }
       }
     }
-  }, 100000)
+  })
 
 })
 
