@@ -2,7 +2,7 @@
 HOW TO USE FOR TESTING
 ----
 
-1. Unzip THIS release zipfile (e2erunner-1.3.2-20200219)
+1. Unzip THIS release zipfile (e2erunner-1.4.0-20200227)
 2. [ONLY FIRST TIME] install protractor globally (`npm install -g protractor`)
 3. [ONLY FIRST TIME] update (`webdriver-manager update`) - Ensure latest Chrome browser
 4. `webdriver-manager start`
@@ -14,8 +14,17 @@ HOW TO USE FOR TESTING
 RELEASE NOTES
 ----
 
+2020-02-27
+1.4.0 (CURRENT)
+
+wait and wait:click works. 
+Two new actions, wait and wait:click implemented. 
+(See sample-tests.xlsx. Value col. is timeout)
+
+.
+
 2020-02-19
-1.3.2 (CURRENT)
+1.3.2
 
 release ready with readme. no npm install.
 

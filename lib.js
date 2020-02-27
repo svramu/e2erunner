@@ -41,6 +41,19 @@ exports.dragAndDrop = (src, dst) => __awaiter(void 0, void 0, void 0, function* 
 exports.sleep = (ms) => __awaiter(void 0, void 0, void 0, function* () {
     yield protractor_1.browser.sleep(ms);
 });
+exports.wait = (l, ms) => __awaiter(void 0, void 0, void 0, function* () {
+    var EC = protractor_1.protractor.ExpectedConditions;
+    let elem = protractor_1.element(loc(l));
+    var isClickable = EC.elementToBeClickable(elem);
+    yield protractor_1.browser.wait(isClickable, ms);
+});
+exports.waitClick = (l, ms) => __awaiter(void 0, void 0, void 0, function* () {
+    var EC = protractor_1.protractor.ExpectedConditions;
+    let elem = protractor_1.element(loc(l));
+    var isClickable = EC.elementToBeClickable(elem);
+    yield protractor_1.browser.wait(isClickable, ms);
+    yield elem.click();
+});
 exports.clickButtonByText = (partialText) => __awaiter(void 0, void 0, void 0, function* () {
     let elem = protractor_1.element(protractor_1.by.partialButtonText(partialText));
     yield elem.click();

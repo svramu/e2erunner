@@ -43,6 +43,8 @@ describe('eune2e dynamic', () => {
             case 'keys': await lib.inputText(l, d); break
             case 'dnd': await lib.dragAndDrop(l, d); break
             case 'sleep': await lib.sleep(+d); break
+            case 'wait': await lib.wait(l, +d); break
+            case 'wait:click': await lib.waitClick(l, +d); break
             case 'click': await lib.click(l); break
             case 'click:text': await lib.clickButtonByText(l); break
             case 'link:text': await lib.clickLink(l); break

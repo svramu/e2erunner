@@ -61,6 +61,12 @@ describe('eune2e dynamic', () => {
                         case 'sleep':
                             yield lib.sleep(+d);
                             break;
+                        case 'wait':
+                            yield lib.wait(l, +d);
+                            break;
+                        case 'wait:click':
+                            yield lib.waitClick(l, +d);
+                            break;
                         case 'click':
                             yield lib.click(l);
                             break;

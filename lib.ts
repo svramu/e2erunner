@@ -38,6 +38,21 @@ export let sleep = async (ms: number) => {
   await browser.sleep(ms);
 }
 
+export let wait = async (l: string, ms: number) => {
+  var EC = protractor.ExpectedConditions;
+  let elem = element(loc(l))
+  var isClickable = EC.elementToBeClickable(elem);
+  await browser.wait(isClickable, ms);
+}
+
+export let waitClick = async (l: string, ms: number) => {
+  var EC = protractor.ExpectedConditions;
+  let elem = element(loc(l))
+  var isClickable = EC.elementToBeClickable(elem);
+  await browser.wait(isClickable, ms);
+  await elem.click()
+}
+
 export let clickButtonByText = async (partialText: string) => {
   let elem = element(by.partialButtonText(partialText))
   await elem.click()
